@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title id="doc-title">绑卡卡邦~</title>
+    <!-- 响应式视口设置 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 本地样式表 -->
+    <link rel="stylesheet" href="static/css/style.css" type="text/css" />
+    <!-- 图标库 -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/ionicons/4.6.1/css/ionicons.min.css">
+    <!-- mdui UI 框架样式 -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/mdui/1.0.2/css/mdui.min.css" />
+    <!-- 网站 favicon -->
+    <link href="static/img/favicon.ico" rel="shortcut icon">
+</head>
+
+
+<body class="mdui-theme-primary-purple mdui-theme-accent-blue">
+    <!-- 页面主容器 -->
+    <div class="mdui-container-fluid">
+        <main class="wrapper">
+            <div id="wrapper-background-filter"></div>
+            <div id="wrapper-background"></div>
+            <!-- 内容区 -->
+            <div id="content">
+                <div id="title-container">
+                    <h1 id="page-title">
+                        <span class="translatable" data-key="page.title">Welcome to Aris</span>
+                    </h1>
+                    <img id="title-img" alt="img of aris" src="static/img/favicon.png">
+                </div>
+
+                <!-- 页面描述 -->
+                <h2 id="page-descriptions">
+                    <span class="translatable" data-key="page.descriptions">The website for Aris, the <del>most noisy</del> cutest BlueArchive character out there.</span>
+                </h2>
+                <!-- 计数器区块 -->
+                <div id="counter-container">
+                    <h3 id="counter-descriptions">
+                        <span class="translatable" data-key="counter.descriptions">The Aris has been swinged for</span>
+                    </h3>
+                    <br />
+                    <br />
+                    <!-- 本地计数显示 -->
+                    <p id="counter-text">0</p>
+                    <br />
+                    <br />
+                    <!-- 计数单位 -->
+                    <p id="counter-unit">
+                        <span class="translatable" data-key="counter.unit">times</span>
+                    </p>
+                    <!-- 计数按钮 -->
+                    <button id="counter-button">
+                        <span class="translatable" data-key="counter.button">0%</span>
+                    </button>
+                    <!-- wait to translate -->
+                    <div class="loading"></div>
+                </div>
+                <!-- 网格内容区（可扩展） -->
+                <div id="grid">
+                    <noscript>Your browser does not support JavaScript or JavaScript has been
+                        disabled.<br />This website relies on JavaScript, so please enable it
+                        or use another browser.</noscript>
+                </div>
+            </div>
+        </main>
+        <!-- 页脚区 -->
+        <div id="footer">
+            <!-- 页脚卡片图片 -->
+            <img id="aris-card" loading="lazy" src="" class="img-autocdn" alt="" />
+            <div id="footer-text">
+                <div class="mdui-list">
+                    <!-- 显示致谢按钮 -->
+                    <a href="javascript:void(0);" class="mdui-list-item mdui-ripple" id="show-credits-opt">
+                        <i class="mdui-icon mdui-list-item-icon ion-md-people mdui-text-color-black-icon"></i>
+                        <div class="mdui-list-item-content footer-icon-text about-link" id="show-credits-text">
+                            <span class="translatable" data-key="show.credits.text">Show Credits</span>
+                        </div>
+                    </a>
+                    <!-- 显示设置按钮 -->
+                    <a href="javascript:void(0);" class="mdui-list-item mdui-ripple" id="show-options-opt">
+                        <i class="mdui-icon mdui-list-item-icon material-icons mdui-text-color-black-icon">settings</i>
+                        <div class="mdui-list-item-content footer-icon-text about-link" id="show-options-text">
+                            Options
+                        </div>
+                    </a>
+                    <!-- GitHub 仓库链接 -->
+                    <a href="https://github.com/Alan-ShangMike/Sping_Aris_github.io" target="_blank"
+                        class="mdui-list-item mdui-ripple">
+                        <i class="mdui-icon mdui-list-item-icon ion-logo-github mdui-text-color-black-icon"></i>
+                        <div class="mdui-list-item-content footer-icon-text about-link">
+                            <span id="repository-desc">
+                                <span class="translatable" data-key="repository.desc">GitHub Repo</span>
+                            </span> - Aris
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mdui 框架脚本 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/mdui/1.0.2/js/mdui.min.js"></script>
+    <!-- 站点主脚本 -->
+    <script src="static/js/script.js" async></script>
+    <!-- Google Analytics 统计代码 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T303QPC9L9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T303QPC9L9');
+    </script>
+</body>
+
+</html>
