@@ -215,6 +215,7 @@ var LANGUAGES = { //多语言counter.button待翻译
 
     const localCounter = document.getElementById("counter-text");
     let localCount = localStorage.getItem("count") || 0;
+    localCounter.innerHTML = `${localCount}`;
 
     var cachedObjects = {};
 
